@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+
+# SQLite database
+data/
+*.db
+*.db-shm
+*.db-wal
+
+# Uploaded files (store on server only)
+uploads/photos/
+uploads/cvs/
+
+# Environment variables (never commit secrets)
+.env
+.env.local
+.env.production
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
