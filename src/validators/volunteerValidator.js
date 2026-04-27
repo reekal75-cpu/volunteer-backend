@@ -252,7 +252,7 @@ function handleValidationErrors(req, res, next) {
     return res.status(422).json({
       success: false,
       errors: errors.array().map((e) => ({
-        field:   e.path || e.param,
+        field:   e.param,
         message: e.msg,
       })),
     });

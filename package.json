@@ -1,10 +1,14 @@
 {
   "name": "volunteer-backend",
   "version": "1.0.0",
+  "engines": {
+    "node": "12.22.12",
+    "npm": ">=6"
+  },
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "dev":   "node --watch index.js",
+    "dev":   "nodemon index.js",
     "test":  "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -12,14 +16,17 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "cors": "^2.8.6",
-    "dotenv": "^17.4.2",
-    "express": "^5.2.1",
-    "express-validator": "^7.3.2",
-    "helmet": "^8.1.0",
-    "morgan": "^1.10.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-validator": "^6.15.0",
+    "helmet": "^4.6.0",
+    "morgan": "^1.10.0",
     "multer": "^2.1.1",
-    "sqlite3": "^6.0.1",
-    "uuid": "^14.0.0"
+    "sqlite3": "^5.1.7",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
   }
 }
